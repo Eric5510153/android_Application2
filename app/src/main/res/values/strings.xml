@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Application2</string>
+
+
+    <string-array name="multi_music_list">
+        <item>airball</item>
+        <item>elysees</item>
+        <item>moon</item>
+        <item>nothing</item>
+
+
+    </string-array>
+
+
+</resources>
