@@ -70,7 +70,24 @@ public class MusicActivity extends AppCompatActivity implements MediaPlayer.OnCo
         });
 
 
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(player!=null){
+            //當活動畫面切換到背景時自動暫停播放
+            if(player.isPlaying()) player.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(player!=null){
+            //畫面切換回前景則從暫停位置接續撥放
+            if(player.getCurrentPosition()>0) player.start();
+        }
     }
 
 

@@ -36,6 +36,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".MusicActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".GPSActivity"
             android:exported="false">
             <meta-data
@@ -43,14 +50,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CameraActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MusicActivity"
+            android:name=".TaipeiSportCenterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -71,14 +71,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".CameraActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".TaipeiSportCenterActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
